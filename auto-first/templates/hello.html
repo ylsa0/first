@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript"
+            src = "{{url_for('static', filename = 'hello.js')}}"></script>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+模板内容
+<br />{{my_str}}
+<br />{{my_dict['name']}}
+<br />{{my_dict.num}}
+<br /><input type="button" onclick="hello()" value="hello"/>
+<br /><a href="/hello/admin">hello</a>
+</body>
+</html>

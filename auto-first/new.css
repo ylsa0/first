@@ -1,0 +1,10 @@
+
+img{
+    height£º450px;
+    width: 450px;
+    transition-property: height;
+    transition-duration: .5s;
+    transition-delay: 1s;
+    transition-timing-function: ease;/*ÊôÐÔ·Ö¿ªÐ´*/
+}
+

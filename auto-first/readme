@@ -1,0 +1,103 @@
+必备库：
+打包工具：      pip install pyinstaller -i https://pypi.tuna.tsinghua.edu.cn/simple
+aes加密：      pip install pycryptodome -i https://pypi.tuna.tsinghua.edu.cn/simple
+图形页面：      pip install pyqt5 pyqt5-tools -i https://pypi.tuna.tsinghua.edu.cn/simple
+Oracle连接：   pip install cx_Oracle -i https://pypi.tuna.tsinghua.edu.cn/simple
+自动化浏览器：   pip install selenium -i https://pypi.tuna.tsinghua.edu.cn/simple
+爬虫框架：      pip install scrapy -i https://pypi.tuna.tsinghua.edu.cn/simple
+页面请求：      pip install requests -i https://pypi.tuna.tsinghua.edu.cn/simple
+文件处理：      pip install pandas -i https://pypi.tuna.tsinghua.edu.cn/simple
+短信发送：      pip install qcloudsms_py
+sqlservr连接： pip install pyodbc -i https://pypi.tuna.tsinghua.edu.cn/simple
+PIL图像处理：    pip install Pillow -i https://pypi.tuna.tsinghua.edu.cn/simple
+网站构建技术类型:   pip install builtwith -i https://pypi.tuna.tsinghua.edu.cn/simple
+网站所有者：  pip install python-whois -i https://pypi.tuna.tsinghua.edu.cn/simple
+网页解析：   pip install lxml -i https://pypi.tuna.tsinghua.edu.cn/simple
+页面解析：   pip install beautifulsoup4 -i https://pypi.tuna.tsinghua.edu.cn/simple
+控制鼠标键盘：  pip install pyautogui -i https://pypi.tuna.tsinghua.edu.cn/simple
+验证码图像处理：   pip install pytesseract -i https://pypi.tuna.tsinghua.edu.cn/simple
+web开发flask：  pip install Flask -i https://pypi.tuna.tsinghua.edu.cn/simple
+web开发djongo：    pip install djongo -i https://pypi.tuna.tsinghua.edu.cn/simple
+连接mysql：    pip install pymysql -i https://pypi.tuna.tsinghua.edu.cn/simple
+python算法：   pip install scipy -i https://pypi.tuna.tsinghua.edu.cn/simple
+判断法定节假日：    pip install chinesecalendar -i https://pypi.tuna.tsinghua.edu.cn/simple
+微信消息：   pip install -U wxpy
+
+环境：
+Python 3.9.5
+
+
+qt-pycharm配置：
+QTdesigner：
+ program：E:\Program Files\Python39\Lib\site-packages\qt5_applications\Qt\bin\designer.exe
+ workingdir：$ProjectFileDir$
+PyUIC:
+ Program：E:\Program Files\Python39\python.exe
+ Arguments：-m PyQt5.uic.pyuic $FileName$ -o $FileNameWithoutExtension$.py
+ Working directory：$ProjectFileDir$
+Pyrcc:
+ Program：E:\Program Files\Python39\Scripts\pyrcc5.exe
+ Arguments：$FileName$ -o $FileNameWithoutExtension$_rc.py
+ Working directory：$FileDir$
+
+
+Tips：
+1、widgt页面无法加载背景图片，需要mainwindow
+2、
+
+
+打包：
+cd D:\Users\m1582\PycharmProjects\seconddj
+pyinstaller -D --distpath D:\Users\m1582\PycharmProjects\seconddj_dist download.py --noconfirm
+
+
+web创建project：
+d:
+cd D:\Users\m1582\PycharmProjects
+django-admin startproject seconddj
+创建模型：
+d:
+cd D:\Users\m1582\PycharmProjects\seconddj
+django-admin startapp usermodel
+
+$ python manage.py migrate   # 创建表结构
+$ python manage.py makemigrations usermodel  # 让 Django 知道我们在我们的模型有一些变更
+$ python manage.py migrate usermodel   # 创建表结构
+
+web启动：
+d:
+cd D:\Users\m1582\PycharmProjects\firstdj
+python manage.py runserver 0.0.0.0:8000
+
+
+管理员用户：
+cd D:\Users\m1582\PycharmProjects\firstdj
+python manage.py createsuperuser
+
+
+异常处理：
+try:
+    self.pushButton_yzm_pwd.clicked.connect(self.getyzm)
+except Exception as e:
+    print(e)
+
+
+scrapy：
+cd C:\Users\Administrator\PycharmProjects
+scrapy startproject img_baidu
+cd new_books
+scrapy genspider photo1 https://img.baidu.com
+
+cd C:\Users\Administrator\PycharmProjects\img_baidu
+scrapy crawl photo1
+scrapy mycrawl --nolog
+
+程序执行：
+d:
+cd D:\Users\m1582\PycharmProjects\auto-first
+python main.py
+
+
+mysql：ip：82.157.35.166:3306
+用户名：root
+密码：Song1234.
